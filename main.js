@@ -1,8 +1,8 @@
 require("dotenv").config(); // Load environment variables
 const express = require("express");
 const mongoose = require("mongoose");
-const User = require("./models/model.js");
-const connectDB = require("./models/db");
+const User = require("./Database/user.js");
+const connectDB = require("./Database/connection.js");
 
 const app = express();
 connectDB();
